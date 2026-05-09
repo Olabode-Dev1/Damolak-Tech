@@ -67,9 +67,6 @@ pipeline {
     }
 
     stage('Deploy') {
-      when {
-        branch 'main'
-      }
       steps {
         withCredentials([
           string(credentialsId: 'tf-state-bucket', variable: 'TF_STATE_BUCKET')
