@@ -1,0 +1,15 @@
+{
+  "name": "damolak-devops-challenge",
+  "version": "1.0.0",
+  "description": "Production-ready sample service for the Damolak Technologies DevOps challenge.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
+
