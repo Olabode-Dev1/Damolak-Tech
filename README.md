@@ -1,5 +1,12 @@
 # Damolak Technologies DevOps Challenge
 
+A short video has been prepared at the given link, it showcases the project
+
+https://drive.google.com/file/d/1jweWVrBRY6x5Lj-rhmxkJbNESLn-Ghvy/view?usp=sharing
+
+The Load balancer link of the project as well: http://damolak-devops-demo-prod-238993285.us-east-1.elb.amazonaws.com
+
+
 This repository contains a complete DevOps workflow for deploying a small Node.js service to AWS in a production-style way. The solution uses Docker for packaging, Terraform for infrastructure, Jenkins for CI/CD, AWS ECS Fargate for compute, and CloudWatch for logging and basic monitoring.
 
 The application itself is intentionally simple. The main goal of the repository is to show infrastructure structure, automation, deployment flow, and operational clarity.
@@ -332,6 +339,11 @@ Expected behavior:
 - `/health` returns service health metadata
 - `/ready` returns readiness metadata
 
+<img width="1676" height="1050" alt="Screenshot 2026-05-10 at 2 09 24 AM" src="https://github.com/user-attachments/assets/c8c601fa-3f9a-4db6-9434-d5329f31c5df" />
+<img width="1676" height="1050" alt="Screenshot 2026-05-10 at 2 10 52 AM" src="https://github.com/user-attachments/assets/0c06379b-c55e-413c-89ef-7ed873807404" />
+<img width="1676" height="1050" alt="Screenshot 2026-05-10 at 2 11 29 AM" src="https://github.com/user-attachments/assets/2fbb76df-c4d8-41c9-939f-e0c2f8d71708" />
+
+
 ## Local Verification
 
 Before using AWS, the application can be verified locally:
@@ -396,8 +408,7 @@ The Jenkins bootstrap `terraform.tfvars` used in the working deployment includes
 - Jenkins security group access was temporarily opened during setup for ease of access. A production setup should restrict this to trusted IPs or VPN access.
 - The Terraform pipeline uses direct `apply`. A team workflow would normally split `plan` and `apply`, with review or approval gates.
 - Monitoring is basic. A stronger setup would include dashboards, latency/error alarms, and application metrics.
-- The app currently reports `local` as its version unless an application version variable is injected.
-
+- 
 ## Reviewer Guide
 
 For the fastest review:
