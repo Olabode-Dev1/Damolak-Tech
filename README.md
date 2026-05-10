@@ -45,6 +45,10 @@ The service is containerized with Docker, stored in Amazon ECR, and deployed to 
 `-- README.md
 ```
 
+
+<img width="1536" height="1024" alt="ChatGPT Image May 10, 2026 at 01_37_07 AM" src="https://github.com/user-attachments/assets/172513f1-efd0-464c-8d76-cfc5ca0cc696" />
+
+
 ## Architecture Overview
 
 The deployment architecture is:
