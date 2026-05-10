@@ -1,27 +1,9 @@
 # Architecture Diagram
 
-```mermaid
-flowchart TD
-    Dev[Developer push to main] --> Jenkins[Jenkins Pipeline]
-    Jenkins --> Test[Run node tests]
-    Jenkins --> Build[Build Docker image]
-    Build --> ECR[Amazon ECR]
-    Jenkins --> TF[Terraform apply]
+![Production-Ready Application Deployment on AWS](architecture-diagram.png)
 
-    subgraph AWS
-      ALB[Application Load Balancer]
-      ECS[ECS Fargate Service]
-      Task[Container task]
-      CW[CloudWatch Logs and Alarm]
-      VPC[VPC with public and private subnets]
-    end
+If the image does not render on GitHub, make sure the exported diagram file exists at:
 
-    TF --> VPC
-    TF --> ALB
-    TF --> ECS
-    TF --> CW
-    ECR --> Task
-    ALB --> ECS
-    ECS --> Task
-    Task --> CW
+```text
+docs/architecture-diagram.png
 ```
